@@ -108,11 +108,15 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:3000",
+<<<<<<< HEAD
     "https://course-registration-website-seven.vercel.app",
 ]
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^https://.*\.vercel\.app$",
+=======
+    "https://course-registration-website-seven.vercel.app"
+>>>>>>> 806a909150cce281085fe4cc1bbe5f48fa71c32f
 ]
 
 CSRF_TRUSTED_ORIGINS = [
