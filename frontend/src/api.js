@@ -2,7 +2,7 @@ import axios from "axios";
 
 // All API requests go to the Django backend at port 8000
 const api = axios.create({
-  baseURL: "http://localhost:8000/api/",
+  baseURL: process.env.REACT_APP_API_URL || "http://localhost:8000/api/",
 });
 
 // Automatically attach the JWT token to every request
