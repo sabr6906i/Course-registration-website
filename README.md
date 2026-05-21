@@ -5,7 +5,7 @@ A full-stack web app with a Django REST Framework backend and React frontend.
 ## Project Structure
 
 ```
-ugac web assignment/
+
 ├── Coursereg/       ← Django backend
 └── frontend/        ← React frontend
 ```
