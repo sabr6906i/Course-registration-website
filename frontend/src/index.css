@@ -54,6 +54,8 @@ body {
 
 /* ── Page wrapper ────────────────────────── */
 .container {
+  color: blue;
+  font-size: large;
   max-width: 1000px;
   margin: 32px auto;
   padding: 0 16px;
@@ -237,4 +239,43 @@ table td {
   display: flex;
   gap: 8px;
   align-items: center;
+}
+
+/* ── Responsive ──────────────────────────── */
+@media (max-width: 640px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .container {
+    margin: 16px auto;
+  }
+
+  /* tables scroll horizontally on mobile */
+  .card {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 500px;
+  }
+
+  /* 2-col grids collapse to 1 col */
+  div[style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
 }

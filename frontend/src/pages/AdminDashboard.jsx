@@ -139,7 +139,7 @@ function AdminDashboard() {
 
           {/* Edit course form — only shown when a course is being edited */}
           {editingCourse && (
-            <div className="card" style={{ borderLeft: "4px solid #2563eb" }}>
+            <div className="card">
               <h2>Edit Course</h2>
               <form onSubmit={handleSaveEdit}>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
