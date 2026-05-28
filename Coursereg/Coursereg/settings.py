@@ -100,7 +100,6 @@ from datetime import timedelta
 # Keep the user logged in for 1 day; default is only 5 minutes
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(days=1),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
 }
 
 # Allow requests from the React frontend (Vite runs on port 5173)
